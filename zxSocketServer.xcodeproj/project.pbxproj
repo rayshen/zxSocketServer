@@ -13,6 +13,10 @@
 		33569F7F151DC9C700605257 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 33569F7D151DC9C700605257 /* Credits.rtf */; };
 		33569F82151DC9C700605257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F81151DC9C700605257 /* AppDelegate.m */; };
 		33569F85151DC9C700605257 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33569F83151DC9C700605257 /* MainMenu.xib */; };
+		33569F8F151DCA3800605257 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F8C151DCA3800605257 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		33569F90151DCA3800605257 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F8E151DCA3800605257 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		33569F96151DCC0E00605257 /* NetFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33569F95151DCC0E00605257 /* NetFS.framework */; };
+		33569F9D151DCE4300605257 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33569F9C151DCE4300605257 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +25,20 @@
 		33569F71151DC9C700605257 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		33569F72151DC9C700605257 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		33569F73151DC9C700605257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		33569F76151DC9C700605257 /* zxSocketServer-Info.plist */ = {isa = PBXFileReference; path = "zxSocketServer-Info.plist"; sourceTree = "<group>"; };
+		33569F76151DC9C700605257 /* zxSocketServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zxSocketServer-Info.plist"; sourceTree = "<group>"; };
 		33569F78151DC9C700605257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		33569F7A151DC9C700605257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		33569F7C151DC9C700605257 /* zxSocketServer-Prefix.pch */ = {isa = PBXFileReference; path = "zxSocketServer-Prefix.pch"; sourceTree = "<group>"; };
+		33569F7C151DC9C700605257 /* zxSocketServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zxSocketServer-Prefix.pch"; sourceTree = "<group>"; };
 		33569F7E151DC9C700605257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		33569F80151DC9C700605257 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		33569F80151DC9C700605257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33569F81151DC9C700605257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33569F84151DC9C700605257 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33569F8B151DCA3800605257 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		33569F8C151DCA3800605257 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		33569F8D151DCA3800605257 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		33569F8E151DCA3800605257 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		33569F95151DCC0E00605257 /* NetFS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetFS.framework; path = System/Library/Frameworks/NetFS.framework; sourceTree = SDKROOT; };
+		33569F9C151DCE4300605257 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33569F9D151DCE4300605257 /* Security.framework in Frameworks */,
+				33569F96151DCC0E00605257 /* NetFS.framework in Frameworks */,
 				33569F6F151DC9C700605257 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +58,8 @@
 		33569F5F151DC9C700605257 = {
 			isa = PBXGroup;
 			children = (
+				33569F9C151DCE4300605257 /* Security.framework */,
+				33569F95151DCC0E00605257 /* NetFS.framework */,
 				33569F74151DC9C700605257 /* zxSocketServer */,
 				33569F6D151DC9C700605257 /* Frameworks */,
 				33569F6B151DC9C700605257 /* Products */,
@@ -82,6 +96,10 @@
 		33569F74151DC9C700605257 /* zxSocketServer */ = {
 			isa = PBXGroup;
 			children = (
+				33569F8B151DCA3800605257 /* GCDAsyncSocket.h */,
+				33569F8C151DCA3800605257 /* GCDAsyncSocket.m */,
+				33569F8D151DCA3800605257 /* GCDAsyncUdpSocket.h */,
+				33569F8E151DCA3800605257 /* GCDAsyncUdpSocket.m */,
 				33569F80151DC9C700605257 /* AppDelegate.h */,
 				33569F81151DC9C700605257 /* AppDelegate.m */,
 				33569F83151DC9C700605257 /* MainMenu.xib */,
@@ -168,6 +186,8 @@
 			files = (
 				33569F7B151DC9C700605257 /* main.m in Sources */,
 				33569F82151DC9C700605257 /* AppDelegate.m in Sources */,
+				33569F8F151DCA3800605257 /* GCDAsyncSocket.m in Sources */,
+				33569F90151DCA3800605257 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +274,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zxSocketServer/zxSocketServer-Prefix.pch";
 				INFOPLIST_FILE = "zxSocketServer/zxSocketServer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,6 +286,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zxSocketServer/zxSocketServer-Prefix.pch";
 				INFOPLIST_FILE = "zxSocketServer/zxSocketServer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +311,7 @@
 				33569F8A151DC9C700605257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
